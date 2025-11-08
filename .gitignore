@@ -1,26 +1,69 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
-# ignore .vscode folder
-.vscode
+#################################
+# VSCode
+#################################
+.vscode/
 
-# dependencies
-/node_modules
-/.pnp
+#################################
+# Node / Frontend
+#################################
+node_modules/
+.pnp/
 .pnp.js
-
-# testing
-/coverage
-
-# production
-/build
-
-# misc
-.DS_Store
+coverage/
+build/
+dist/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
 .env.local
 .env.development.local
 .env.test.local
 .env.production.local
 
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
+#################################
+# Python / Django
+#################################
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.egg
+*.egg-info/
+*.sqlite3
+db.sqlite3
+media/
+staticfiles/
+*.log
+
+#################################
+# Environment & Config
+#################################
+.env
+.env.*
+!.env.example
+
+#################################
+# Virtual Environments
+#################################
+venv/
+env/
+ENV/
+.venv/
+
+#################################
+# Docker
+#################################
+*.pid
+*.pid.lock
+/data/
+docker-compose.override.yml
+
+#################################
+# OS Files
+#################################
+.DS_Store
+Thumbs.db
+
