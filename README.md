@@ -1,30 +1,45 @@
-# Simple Notes App for TWS Community
-This is a simple notes app built with React and Django.
+# 🧠 3-Tier Notes Application
 
-## Requirements
-1. Python 3.9
-2. Node.js
-3. React
+This is a simple **Notes App** built with **React (Frontend)**, **Django (Backend)**, and **MySQL (Database)**.  
+It uses **Docker** and **Nginx** for containerization and reverse proxying.
 
-## Installation
-1. Clone the repository
-```
-git clone https://github.com/LondheShubham153/django-notes-app.git
-```
+## 📦 Project Structure
 
-2. Build the app
-```
-docker build -t notes-app .
-```
+<img width="338" height="316" alt="image" src="https://github.com/user-attachments/assets/57dcadf2-51c2-4b65-a950-56b3ce8c1951" />
 
-3. Run the app
-```
-docker run -d -p 8000:8000 notes-app:latest
-```
 
-## Nginx
 
-Install Nginx reverse proxy to make this application available
+## 🚀 Features
 
-`sudo apt-get update`
-`sudo apt install nginx`
+- User-friendly notes management interface  
+- Django REST API backend  
+- MySQL as database  
+- Dockerized deployment  
+- Nginx reverse proxy  
+- Health checks for all containers  
+
+
+## 🛠️ Requirements
+
+- Docker 🐳  
+- Docker Compose  
+- Git  
+
+
+## ⚙️ Setup Instructions
+
+### 1️⃣ Clone the Repository
+``bash
+- git clone https://github.com/BhushanYewale98/devops-projects.git
+cd devops-projects
+
+### 2️⃣ Build and Run Containers
+- docker compose up --build
+
+### 3️⃣ Access the App
+- Frontend: http://localhost
+- Backend (Django Admin): http://localhost:8000/admin
+- Database: MySQL on port 3306
+
+
+
