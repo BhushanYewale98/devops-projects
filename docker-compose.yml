@@ -1,9 +1,7 @@
-version: "3.8"
-
 services:
   nginx:
     build: ./nginx
-    image: nginx
+    image: my-nginx
     container_name: "nginx_cont"
     ports:
       - "80:80"
@@ -14,9 +12,7 @@ services:
       - notes-app-nw
 
   django_app:
-    build:
-      context: .
-    image: django_app
+    image: bhushan907/notes-app:latest
     container_name: "django_cont"
     ports:
       - "8000:8000"
@@ -37,6 +33,8 @@ services:
 
   db:
     image: mysql
+    ports:
+      - "3306:3306"
     container_name: "db_cont"
     environment:
       - MYSQL_ROOT_PASSWORD=root
